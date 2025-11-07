@@ -1,4 +1,4 @@
-import { SquawkingInterface } from "../SquawkingInterface";
+import { SquawkingInterface } from "../../../interfaces/behaviors/SquawkingInterface";
 
 export class SqueakSquak implements SquawkingInterface {
   squawk = () => {

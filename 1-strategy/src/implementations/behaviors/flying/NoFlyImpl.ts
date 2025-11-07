@@ -1,4 +1,4 @@
-import { FlyingInterface } from "../FlyingInterface";
+import { FlyingInterface } from "../../../interfaces/behaviors/FlyingInterface";
 
 export class NoFly implements FlyingInterface {
     fly = () => {

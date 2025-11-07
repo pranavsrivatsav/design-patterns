@@ -1,5 +1,5 @@
-import { FlyingInterface } from "./behaviors/flying/FlyingInterface";
-import { SquawkingInterface } from "./behaviors/squawking/SquawkingInterface";
+import { FlyingInterface } from "./behaviors/FlyingInterface";
+import { SquawkingInterface } from "./behaviors/SquawkingInterface";
 
 export class Duck {
     // Behaviours that can change across ducks - hence we use interfaces 
