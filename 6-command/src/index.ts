@@ -12,6 +12,21 @@ import { Light } from "./Receivers/Light";
 import { Stereo } from "./Receivers/Stereo";
 import { RemoteControl } from "./RemoteControl";
 
+// Simulation of Command Design Pattern
+
+// Command design pattern allows us to abstract a request by creating interfaces called commands.
+// These commands have two attributes mainly
+// - Receiver: The entity that will be resolving the request
+// - execute(): A function that will have the logic to translate the request into execution logic that involves the receiver.
+
+// What do we gain from this?
+// 1. The requestor need not worry about the intricacies of the receiver, all it needs is a compatible command using which a
+// request can be passed. We can extend requests which involve complex execution logics underneath, but not visible to 
+// the actual requestor. 
+// 2. The requestor and the receiver are decoupled, as they are not directly tied in together, and are instead integrated in
+// the command implementation.
+
+
 const remoteControl = new RemoteControl();
 
 const light = new Light();
