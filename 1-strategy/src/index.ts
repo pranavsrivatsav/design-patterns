@@ -1,22 +1,22 @@
 import { NoFly } from "./implementations/behaviors/flying/NoFlyImpl";
 import { Duck } from "./interfaces/Duck";
-import { FlyingDuck } from "./implementations/ducks/FlyingDuck"
+import { FlyingDuck } from "./implementations/ducks/FlyingDuck";
 
 /*********************
- * Context: Code example of strategt patern
- * 
+ * Context: Code example of strategy patern
+ *
  * Strategy Pattern: The Strategy Pattern defines a family of algorithms,
  * encapsulates each one, and makes them interchangeable. Strategy
  * lets the algorithm vary independently from clients that use it.
- * 
+ *
  * We have a Duck class, and it has many types of behaviors, some static and some dynamic
- * The statis behaviors can be defined in the main Duck class itself, but dynamic behaviors of each
+ * The static behaviors can be defined in the main Duck class itself, but dynamic behaviors of each
  * type of duck can have various implementations - i.e a duck can fly with wings, a duck can fly with rockets etc.
  * So here we create interfaces for each behavior, and have implementations for them
- * And each duck is instantiated with implementations of these behaviors based on requirement. 
- * 
- * Here the various types of behaviors are the family of algorithms 
- * namely in the example flying and squawking behavior, and the we can 
+ * And each duck is instantiated with implementations of these behaviors based on requirement.
+ *
+ * Here the various types of behaviors are the family of algorithms
+ * namely in the example flying and squawking behavior, and the we can
  * switch between the algor
  ********************/
 
