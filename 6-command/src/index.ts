@@ -21,11 +21,10 @@ import { RemoteControl } from "./RemoteControl";
 
 // What do we gain from this?
 // 1. The requestor need not worry about the intricacies of the receiver, all it needs is a compatible command using which a
-// request can be passed. We can extend requests which involve complex execution logics underneath, but not visible to 
-// the actual requestor. 
+// request can be passed. We can extend requests which involve complex execution logics underneath, but not visible to
+// the actual requestor.
 // 2. The requestor and the receiver are decoupled, as they are not directly tied in together, and are instead integrated in
 // the command implementation.
-
 
 const remoteControl = new RemoteControl();
 
@@ -46,8 +45,18 @@ const garageDoorCloseCommand = new GarageDoorCloseCommand(garageDoor);
 const stereoOnCommand = new StereoOnCommand(stereo);
 const stereoOffCommand = new StereoOffCommand(stereo);
 
-remoteControl.setOnCommands([lightOnCommand, ceilingFanOnCommand, garageDoorOpenCommand, stereoOnCommand]);
-remoteControl.setOffCommands([lightOffCommand, ceilingFanOffCommand, garageDoorCloseCommand, stereoOffCommand]);
+remoteControl.setOnCommands([
+  lightOnCommand,
+  ceilingFanOnCommand,
+  garageDoorOpenCommand,
+  stereoOnCommand,
+]);
+remoteControl.setOffCommands([
+  lightOffCommand,
+  ceilingFanOffCommand,
+  garageDoorCloseCommand,
+  stereoOffCommand,
+]);
 
 console.log(remoteControl);
 
